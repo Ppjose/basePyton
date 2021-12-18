@@ -1,16 +1,30 @@
 # This is a sample Python script.
+# Python3 code to demonstrate working of
+# Convert numeric words to numbers
+# Using join() + split()
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+help_dict = {
+	'one': '1',
+	'two': '2',
+	'three': '3',
+	'four': '4',
+	'five': '5',
+	'six': '6',
+	'seven': '7',
+	'eight': '8',
+	'nine': '9',
+	'zero' : '0'
+}
 
+# initializing string
+test_str = "zero four zero one"
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# printing original string
+print("The original string is : " + test_str)
 
+# Convert numeric words to numbers
+# Using join() + split()
+res = ''.join(help_dict[ele] for ele in test_str.split())
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# printing result
+print("The string after performing replace : " + res)
