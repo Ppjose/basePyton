@@ -25,6 +25,6 @@ print("The original string is : " + test_str)
 # Convert numeric words to numbers
 # Using join() + split()
 res = ''.join(help_dict[ele] for ele in test_str.split())
-
+x = 1000+int(res)
 # printing result
-print("The string after performing replace : " + res)
+print(x)
